@@ -7,12 +7,13 @@ import NotFound from './presentational/not-found.component';
 import CountryFlagContainer from './containers/flag-container.component';
 import CountryDetailsContainer from './containers/country-detail-container.component';
 import ContinentsContainer from './containers/continents-container.component';
+import { IndexRoute } from 'react-router';
 
 export default (
 	<Route path='/' component={Navigation}>
-		<Route path='/' component={Home}/>
+		<IndexRoute component={Home}/>
 		<Route path='countries' component={CountryFlagContainer}>
-			<Route path='/' component={CountryFlagContainer}/>
+			<IndexRoute component={CountryFlagContainer}/>
 			<Route path='country/:id' component={CountryDetailsContainer}/>
 		</Route>
 		<Route path='continents' component={ContinentsContainer}/>

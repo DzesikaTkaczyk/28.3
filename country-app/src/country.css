@@ -103,3 +103,16 @@ h2 {
     max-width: 100%;
     max-height: 100%;
 }
+
+.navbar-header {
+    display: flex;
+}
+
+.subside {
+    display: flex;
+    margin: 10px;
+}
+
+.subside:hover {
+    text-decoration: none;
+}
